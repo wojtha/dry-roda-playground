@@ -1,0 +1,9 @@
+development: &base
+  database_url: postgres://localhost/roda_development
+  basic_auth_user: bim
+  basic_auth_password: bam
+test:
+  <<: *base
+  database_url: postgres://localhost/roda_test
+production:
+  <<: *base
